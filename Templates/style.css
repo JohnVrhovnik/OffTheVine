@@ -1,9 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Marcellus+SC|Varela+Round);
+
 body {
-  max-width: 1000px;
-  padding: 1em;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Varela Round', Arial, sans-serif;
+  color: rgb(60,75,98);
+  margin: 0;
+}
+
+.logo {
+  width: 100%;
+  position: 0 auto;
+  max-width: 300px;
+  text-align: center;
 }
 
 h1 {
-  color: gray;
+  color: white;
+  font-family: 'Marcellus SC', Arial, sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: rgb(198,107,102);
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.primary {
+  background-color: rgb(201,185,162);
+  width: 100%;
+  padding: 3em;
+}
+
+.secondary {
+  width: 100%;
+  padding: 3em;
+}
+
+nav ul {
+  font-family: 'Marcellus SC', Arial, sans-serif;
+  color: white;
+  text-transform: lowercase;
+  list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+footer {
+  width: 100%;
+  padding: 3em;
+  background-color: rgb(230,222,212)
 }
