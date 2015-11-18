@@ -1,16 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Marcellus+SC|Varela+Round);
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Varela Round', Arial, sans-serif;
   color: rgb(60,75,98);
   margin: 0;
 }
 
+header {
+    text-align: center;
+}
+
 .logo {
-  width: 100%;
   position: 0 auto;
   max-width: 300px;
-  text-align: center;
 }
 
 h1 {
@@ -33,6 +39,7 @@ h2 {
   background-color: rgb(201,185,162);
   width: 100%;
   padding: 3em;
+
 }
 
 .secondary {
@@ -40,12 +47,16 @@ h2 {
   padding: 3em;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 nav ul {
   font-family: 'Marcellus SC', Arial, sans-serif;
   color: white;
   text-transform: lowercase;
-  list-style-type: none;
-
 }
 
 a {
