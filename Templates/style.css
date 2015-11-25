@@ -13,6 +13,10 @@ body {
 header {
     text-align: center;
 }
+p {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 .logo {
   position: 0 auto;
@@ -28,11 +32,15 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   color: rgb(198,107,102);
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.8em;
   letter-spacing: 3px;
+}
+h3 {
   text-align: center;
+  font-size: 1.4em;
 }
 
 .primary {
@@ -51,22 +59,50 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  font-size: 1.2em;
+  text-align: center;
 }
 
-nav ul {
+nav {
   font-family: 'Marcellus SC', Arial, sans-serif;
   color: white;
   text-transform: lowercase;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
 }
+nav a:hover {
+  color: rgb(60,75,98);
+}
 
-footer {
+footer dl {
   width: 100%;
   padding: 3em;
   background-color: rgb(230,222,212)
+}
+footer a {
+  color: rgb(198,107,102);
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+footer dt {
+  font-family: 'Marcellus SC', Arial, sans-serif;
+  font-size: 1.75em;
+  text-transform: lowercase;
+  margin-bottom: .5em;
+}
+footer dd {
+  margin: 0;
+  line-height: 1.5em;
+  margin-bottom: .75em;
 }
