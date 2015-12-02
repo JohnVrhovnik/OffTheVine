@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -26,92 +27,172 @@ p {
   max-width: 300px;
 }
 
+.emdash {
+  text-align: center;
+  font-size: 2.25em;
+  padding: .25em;
+}
+
 h1 {
   color: white;
   font-family: 'Marcellus SC', Arial, sans-serif;
   text-transform: lowercase;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
+  line-height: 45px;
+  margin: 0;
 }
 
 h2 {
   text-align: center;
   color: rgb(198,107,102);
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 2em;
   letter-spacing: 3px;
 }
 h3 {
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  padding: .5em;
+  text-transform: uppercase;
 }
 
 .primary {
   background-color: rgb(201,185,162);
   width: 100%;
-  padding: .5em 2.5em 3em 2.5em;
+  padding: 2.5em;
+  margin: 0;
 }
 
 .secondary {
   width: 100%;
-  padding: .5em 2.5em 3em 2.5em;
+  padding: 2.5em;
   margin: 0;
 }
 
-.fieldimg {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+.hero-image {
+  background-image: url(../Assets/images/Image7.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+nav {
+  font-family: 'Marcellus SC', Arial, sans-serif;
+  color: white;
+  text-transform: lowercase;
+  padding-top: .5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    transition: all .1s ease;
+}
+nav a:hover {
+  color: rgb(198,107,102);
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
+  line-height: 30px;
+  -webkit-columns: 200px 2;
+  -moz-columns: 200px 2;
+  columns: 200px 2;
 }
 
-nav {
-  font-family: 'Marcellus SC', Arial, sans-serif;
-  color: white;
-  text-transform: lowercase;
+@media screen and (min-width: 600px) {
+  nav ul {
+    -webkit-columns: 200px 3;
+    -moz-columns: 200px 3;
+    columns: 200px 3;
+  }
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
+@media screen and (min-width: 800px) {
+  nav ul{
+    width: 100%;
+  }
+  nav ul {
+    -webkit-columns: auto auto;
+    -moz-columns: auto auto;
+    columns: auto auto;
+    position: absolute;
+    top: 0;
+    padding: .45em 1em;
+  }
+  nav li {
+    display: inline;
+    padding: 1.2em 1.4em;
+    font-size: 1em;
+    text-align: center;
+  }
+  nav ul li:first-child, nav ul li:nth-child(2), nav ul li:nth-child(3) {
+    float: left;
+  }
+  nav ul li:nth-child(4), nav ul li:nth-child(5), nav ul li:nth-child(6) {
+    float: right;
+  }
+  header {
+    padding-bottom: .2em;
+  }
 }
-nav a:hover {
-  color: rgb(60,75,98);
+@media screen and (min-width: 950px) {
+  nav li {
+    padding: 1.2em 1.5em;
+    font-size: 1.1em;
+  }
+  nav ul {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  nav {
+    max-width: 950px;
+    margin: 0 auto;
+  }
 }
 
 .button {
-  display: inline-block;
+  display: block;
   text-align: center;
-  position: 0 auto;
+  width: 50%;
+  min-width: 170px;
+  max-width: 220px;
+  margin: 0 auto;
+  margin-top: 2em;
+  position: relative;
   text-decoration: none;
-  border: 3px solid rgb(60,75,98);
-  padding: .75em 1.75em;
+  border: 3px solid rgb(198,107,102);
+  padding: .75em 1em .75em 1.25em;
   font-size: .9em;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgb(60,75,98);
+  color: rgb(198,107,102);
+  transition: all .1s ease;
 }
 
-.button:after {
-  content: "+"
+.button::after {
+  content: "▶";
+  font-size: .7em;
+  padding-left: 1em;
 }
 
 .button:hover {
-  border: white;
+  border: 3px solid rgb(198,107,102);
+  background-color: rgb(198,107,102);
+  color: rgb(201,185,162);
 }
 
 
-footer dl {
+footer {
   width: 100%;
-  padding: 3em;
+  padding: 2.5em;
   background-color: rgb(230,222,212)
 }
 footer a {
@@ -127,13 +208,17 @@ footer {
 }
 
 footer dt {
-  font-family: 'Marcellus SC', Arial, sans-serif;
-  font-size: 1.75em;
-  text-transform: lowercase;
-  margin-bottom: .5em;
+  font-family: 'Varela Round', Arial, sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-bottom: .5em;
 }
 footer dd {
   margin: 0;
-  line-height: 1em;
-  margin-bottom: .75em;
+  line-height: 1.5em;
+  padding-bottom: 1em;
+}
+.credit {
+  font-size: .8em;
+  padding-top: 1em;
 }
