@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Marcellus+SC|Varela+Round);
+
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Varela Round', Arial, sans-serif;
+  color: rgb(60,75,98);
+  margin: 0;
+  padding:2em;
+}
+
+
+p {
+  max-width: 900px;
+  margin: 0 auto;
+  color:rgb(60,75,98);
+}
+
+
+h1 {
+  color: rgb(60,75,98);
+  font-family: 'Marcellus SC', Arial, sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2 {
+  
+  color: rgb(198,107,102);
+  text-transform: uppercase;
+  font-size: 1.8em;
+  letter-spacing: 3px;
+}
+h3 {
+  
+  font-size: 1.4em;
+}
+a{
+  color:rgb(60,75,98);
+}
