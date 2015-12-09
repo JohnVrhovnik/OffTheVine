@@ -42,3 +42,33 @@ h3 {
 a{
   color:rgb(60,75,98);
 }
+.button {
+  display: block;
+  text-align: center;
+  width: 50%;
+  min-width: 170px;
+  max-width: 220px;
+  margin: 0 auto;
+  margin-top: 2em;
+  position: ;
+  text-decoration: none;
+  border: 3px solid rgb(60,75,98);
+  padding: .75em 1em .75em 1.25em;
+  font-size: .9em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(60,75,98);
+  transition: all .1s ease;
+}
+
+.button::after {
+  content: "▶";
+  font-size: .7em;
+  padding-left: 1em;
+}
+
+.button:hover {
+  border: 3px solid rgb(60,75,98);
+  background-color: rgb(60,75,98);
+  color: rgb(201,185,162);
+
