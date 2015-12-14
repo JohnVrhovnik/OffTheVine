@@ -1,5 +1,12 @@
 you@import url(https://fonts.googleapis.com/css?family=Marcellus+SC|Varela+Round);
 
+/* To do:
+- Quote needs "flex" code.
+- Oversized .primary and .secondary boxes
+- Nav elements arranged improperly
+*/
+
+
 * {
   box-sizing: border-box;
   margin: 0;
