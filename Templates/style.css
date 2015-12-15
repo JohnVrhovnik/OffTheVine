@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Marcellus+SC|Varela+Round);
 
-/* To do:
-- Quote needs "flex" code.
-- Bullshit Emoji's..
-*/
-
 
 * {
   box-sizing: border-box;
@@ -52,6 +47,7 @@ blockquote {
 }
 
 .wrapper {
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -302,8 +298,8 @@ ul {
 }
 
 .button::after {
-  content: "▶";
-  font-size: .7em;
+  content: "►";
+  font-size: .8em;
   padding-left: 1em;
 }
 
@@ -442,6 +438,15 @@ footer dd {
 
 .headpad {
   padding: 1em 0;
+}
+
+@media screen and (min-width: 400px) {
+  h1 {
+    font-size: 2.3em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (min-width: 550px) {
