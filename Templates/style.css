@@ -108,7 +108,7 @@ h1 {
   text-transform: lowercase;
   text-align: center;
   font-size: 2.45em;
-  line-height: 30px;
+  line-height: 25px;
   margin: 0 auto;
 }
 .sec-h1 {
@@ -125,7 +125,7 @@ h2 {
 }
 h3 {
   text-align: center;
-  font-size: 1.35em;
+  font-size: 1.2em;
   padding: .7em;
   text-transform: uppercase;
 }
@@ -443,9 +443,13 @@ footer dd {
 @media screen and (min-width: 400px) {
   h1 {
     font-size: 2.75em;
+    line-height: 45px;
   }
   h2 {
     font-size: 1.7em;
+  }
+  h3 {
+    font-size: 1.35em;
   }
 }
 
