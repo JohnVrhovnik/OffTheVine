@@ -108,7 +108,7 @@ h1 {
   text-transform: lowercase;
   text-align: center;
   font-size: 2.45em;
-  line-height: 45px;
+  line-height: 30px;
   margin: 0 auto;
 }
 .sec-h1 {
@@ -120,7 +120,7 @@ h2 {
   text-align: center;
   color: rgb(198,107,102);
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.4em;
   letter-spacing: 3px;
 }
 h3 {
