@@ -107,7 +107,7 @@ h1 {
   font-family: 'Marcellus SC', Arial, sans-serif;
   text-transform: lowercase;
   text-align: center;
-  font-size: 2.75em;
+  font-size: 2.45em;
   line-height: 45px;
   margin: 0 auto;
 }
@@ -120,7 +120,7 @@ h2 {
   text-align: center;
   color: rgb(198,107,102);
   text-transform: uppercase;
-  font-size: 1.7em;
+  font-size: 1.5em;
   letter-spacing: 3px;
 }
 h3 {
@@ -442,10 +442,10 @@ footer dd {
 
 @media screen and (min-width: 400px) {
   h1 {
-    font-size: 2.3em;
+    font-size: 2.75em;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 }
 
