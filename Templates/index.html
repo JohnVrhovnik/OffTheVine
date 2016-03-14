@@ -10,12 +10,28 @@
   </head>
 
   <body>
+
       <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
+      <ul class="hamburger">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">History</a></li>
+          <li class="nav-item"><a href="events.html">Events</a></li>
+          <li class="nav-item"><a href="#">Menu</a></li>
+          <li class="nav-item"><a href="#">Store</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+      </ul>
+
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger"></label>
+
+<div class="site-wrap">
+
       <header role="banner">
         <a href="index.html">
           <img src="../Assets/OffTheVine_Logo.svg" alt="offthevine_logo" class="logo" />
         </a>
-      <nav role="navigation">
+      <nav class="desktopnav" role="navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">History</a></li>
@@ -25,6 +41,7 @@
           <li><a href="#">Menu</a></li>
         </ul>
       </nav>
+
     </header>
 
 
@@ -75,5 +92,6 @@ With a large group or bus tour? We take pride in making your visit to Off the Vi
       <p class="credit">Website designed by John Vrhovnik and Sarah Kuceyeski for the Responsive Web Design class at Kent State University.</p>
       <p class="credit"><a href="../Patterns/patterns.html">Pattern Library</a></p>
     </footer>
+    </div>
   </body>
 </html>

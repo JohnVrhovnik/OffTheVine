@@ -10,6 +10,7 @@ body {
   font-family: 'Varela Round', Arial, sans-serif;
   color: rgb(60,75,98);
   margin: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -227,7 +228,96 @@ ul {
   columns: 200px 2;
 }
 
+.hamburger {
+    list-style: none;
+    background: rgb(198,107,102);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    text-align: left;
+    padding: 1em;
+}
+
+.nav-item {
+    width: 200px;
+    padding: .5em;
+}
+
+.nav-item a {
+  font-size: 1.5em;
+  text-decoration: none;
+  font-family: 'Varela Round', Arial, sans-serif;
+  color: white;
+}
+
+.nav-item a:hover {
+  color: rgb(60,75,98);
+}
+
+.site-wrap {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-trigger {
+    position: fixed;
+    clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
+label[for="nav-trigger"] {
+    /* ... previous styles here... */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url(../Assets/ham-icon-01.svg);
+    background-size: contain;
+}
+
+.nav-trigger:checked + label {
+    left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+    left: 200px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+@media screen and (min-width: 800px) {
+  label[for="nav-trigger"] {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 800px) {
+  .desktopnav {
+    display: none;
+  }
+}
+
+.nav-trigger + label, .site-wrap {
+    transition: left 0.2s;
+}
+
 @media screen and (min-width: 600px) {
+
   nav ul {
     -webkit-columns: 200px 3;
     -moz-columns: 200px 3;
@@ -236,6 +326,9 @@ ul {
 }
 
 @media screen and (min-width: 800px) {
+  .desktopnav {
+    display: block;
+  }
   nav ul{
     width: 100%;
   }
