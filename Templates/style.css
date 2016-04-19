@@ -16,7 +16,7 @@ body {
 header {
     text-align: center;
     background-color: rgb(201,185,162);
-    padding: 1em 2em;
+    padding: 1em 0;
 }
 p {
   max-width: 900px;
